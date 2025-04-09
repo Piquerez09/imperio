@@ -1,0 +1,49 @@
+.page {
+    @apply min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans;
+  }
+  .hero {
+    @apply flex flex-col items-center justify-center py-32 text-center px-4;
+  }
+  .title {
+    @apply text-5xl md:text-7xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-yellow-400 to-white;
+  }
+  .subtitle {
+    @apply text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed;
+  }
+  .section {
+    @apply py-20 px-6;
+  }
+  .pillars {
+    @apply bg-gray-900;
+  }
+  .container {
+    @apply max-w-6xl mx-auto text-center;
+  }
+  .section-title {
+    @apply text-4xl font-bold mb-12 text-yellow-400;
+  }
+  .pillar-grid {
+    @apply grid md:grid-cols-3 gap-10 text-left;
+  }
+  .pillar-box {
+    @apply bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-yellow-500/20 transition;
+  }
+  .pillar-title {
+    @apply text-2xl font-semibold mb-3 text-white;
+  }
+  .pillar-text {
+    @apply text-gray-400;
+  }
+  .product {
+    @apply bg-black;
+  }
+  .product-text {
+    @apply text-xl text-gray-300 mb-6;
+  }
+  .product-button {
+    @apply bg-yellow-400 text-black px-8 py-4 rounded-2xl text-lg font-semibold shadow-lg hover:scale-105 hover:bg-yellow-300 transition-all;
+  }
+  .footer {
+    @apply bg-gray-800 py-10 text-center text-gray-400 text-sm border-t border-gray-700;
+  }
+`}

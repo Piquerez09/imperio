@@ -1,47 +1,45 @@
+
 export default function Home() {
     return (
-      <main className="min-h-screen bg-black text-white font-sans">
-        <section className="flex flex-col items-center justify-center py-32 text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            DOMINUS GROUP
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+      <main className="page">
+        <section className="hero">
+          <h1 className="title">DOMINUS GROUP</h1>
+          <p className="subtitle">
             Poder. Inteligência. Domínio. O nascimento de um império global de tecnologia, educação e inovação.
           </p>
         </section>
   
-        <section className="bg-gray-900 py-20 px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Nossos Pilares</h2>
-            <div className="grid md:grid-cols-3 gap-10 text-left">
-              <div>
-                <h3 className="text-2xl font-semibold mb-2">Tecnologia & IA</h3>
-                <p className="text-gray-400">Criação de produtos digitais, plataformas inteligentes e softwares de impacto global.</p>
+        <section className="section pillars">
+          <div className="container">
+            <h2 className="section-title">Nossos Pilares</h2>
+            <div className="pillar-grid">
+              <div className="pillar-box">
+                <h3 className="pillar-title">Tecnologia & IA</h3>
+                <p className="pillar-text">Criação de produtos digitais, plataformas inteligentes e softwares de impacto global.</p>
               </div>
-              <div>
-                <h3 className="text-2xl font-semibold mb-2">Educação Premium</h3>
-                <p className="text-gray-400">Mentorias, cursos e conteúdos que moldam líderes e criadores de impérios.</p>
+              <div className="pillar-box">
+                <h3 className="pillar-title">Educação Premium</h3>
+                <p className="pillar-text">Mentorias, cursos e conteúdos que moldam líderes e criadores de impérios.</p>
               </div>
-              <div>
-                <h3 className="text-2xl font-semibold mb-2">Luxo & Influência</h3>
-                <p className="text-gray-400">Marcas elegantes, produtos de alto padrão e branding que impõe respeito.</p>
+              <div className="pillar-box">
+                <h3 className="pillar-title">Luxo & Influência</h3>
+                <p className="pillar-text">Marcas elegantes, produtos de alto padrão e branding que impõe respeito.</p>
               </div>
             </div>
           </div>
         </section>
   
-        <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Produto em Destaque</h2>
-            <p className="text-xl text-gray-300 mb-6">Curso "Mentalidade de Império" – a jornada mental e prática de quem constrói bilhões.</p>
-            <button className="bg-white text-black px-6 py-3 rounded-2xl text-lg font-semibold shadow hover:scale-105 transition">Acessar Curso</button>
+        <section className="section product">
+          <div className="container">
+            <h2 className="section-title">Produto em Destaque</h2>
+            <p className="product-text">Curso \"Mentalidade de Império\" – a jornada mental e prática de quem constrói bilhões.</p>
+            <button className="product-button">Acessar Curso</button>
           </div>
         </section>
   
-        <footer className="bg-gray-800 py-10 text-center text-gray-400 text-sm">
+        <footer className="footer">
           <p>&copy; 2025 Dominus Group. Todos os direitos reservados.</p>
         </footer>
       </main>
     );
   }
-  
