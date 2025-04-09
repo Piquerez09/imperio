@@ -1,17 +1,22 @@
 .page {
-    @apply min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans;
+    @apply min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans overflow-x-hidden;
   }
   .hero {
-    @apply flex flex-col items-center justify-center py-32 text-center px-4;
+    @apply flex flex-col items-center justify-center py-32 text-center px-4 relative;
+  }
+  .hero::before {
+    content: "";
+    background-image: url('/backgrounds/empire.jpg');
+    @apply absolute inset-0 opacity-10 bg-cover bg-center;
   }
   .title {
-    @apply text-5xl md:text-7xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-yellow-400 to-white;
+    @apply text-6xl md:text-7xl font-black mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-yellow-400 to-white drop-shadow-lg;
   }
   .subtitle {
-    @apply text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed;
+    @apply text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed drop-shadow-md;
   }
   .section {
-    @apply py-20 px-6;
+    @apply py-24 px-6 relative z-10;
   }
   .pillars {
     @apply bg-gray-900;
@@ -20,19 +25,22 @@
     @apply max-w-6xl mx-auto text-center;
   }
   .section-title {
-    @apply text-4xl font-bold mb-12 text-yellow-400;
+    @apply text-4xl font-bold mb-12 text-yellow-400 uppercase tracking-wide;
   }
   .pillar-grid {
-    @apply grid md:grid-cols-3 gap-10 text-left;
+    @apply grid md:grid-cols-3 gap-12 text-left;
   }
   .pillar-box {
-    @apply bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-yellow-500/20 transition;
+    @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl hover:shadow-yellow-500/30 transition-all duration-300 text-center;
   }
   .pillar-title {
-    @apply text-2xl font-semibold mb-3 text-white;
+    @apply text-2xl font-bold mb-3 text-white;
   }
   .pillar-text {
-    @apply text-gray-400;
+    @apply text-gray-400 text-base leading-relaxed;
+  }
+  .icon {
+    @apply w-14 h-14 mx-auto mb-4;
   }
   .product {
     @apply bg-black;
@@ -41,9 +49,8 @@
     @apply text-xl text-gray-300 mb-6;
   }
   .product-button {
-    @apply bg-yellow-400 text-black px-8 py-4 rounded-2xl text-lg font-semibold shadow-lg hover:scale-105 hover:bg-yellow-300 transition-all;
+    @apply bg-yellow-400 text-black px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:scale-105 hover:bg-yellow-300 transition-all duration-300;
   }
   .footer {
     @apply bg-gray-800 py-10 text-center text-gray-400 text-sm border-t border-gray-700;
   }
-`}
